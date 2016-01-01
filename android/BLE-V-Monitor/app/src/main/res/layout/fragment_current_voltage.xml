@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="de.frank_durr.ble_v_monitor.CurrentVoltageFragment"
+    android:id="@+id/current_voltage_fragment"
+    android:padding="5dp">
+
+    <TextView android:id="@+id/textview_label_batteryvoltage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_batteryvoltage"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true" />
+
+    <TextView android:id="@+id/textview_value_batteryvoltage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/unknown"
+        android:layout_toRightOf="@+id/textview_label_batteryvoltage"
+        android:layout_marginLeft="10sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView_chargestatus"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textview_label_batteryvoltage"
+        android:src="@drawable/ic_battery_unknown"
+        android:layout_marginTop="15sp" />
+
+    <TextView android:id="@+id/textview_value_chargestatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/unknown"
+        android:layout_toRightOf="@+id/textview_label_chargestatus"
+        android:layout_below="@+id/imageView_chargestatus"
+        android:layout_marginLeft="10sp"
+        android:layout_marginTop="10sp"
+        android:textStyle="bold" />
+
+    <TextView android:id="@+id/textview_label_chargestatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_batterystatus"
+        android:layout_below="@+id/imageView_chargestatus"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10sp"
+        />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_update_currentvoltage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="16dp"
+        android:scaleType="center"
+        android:elevation="8dp"
+        android:src="@drawable/ic_action_refresh"
+        android:clickable="true" />
+
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <de.frank_durr.ble_v_monitor.FloatEditTextPreference
+        android:key="pref_voltage_offset"
+        android:title="@string/pref_offset"
+        android:summary="@string/pref_offset_summary"
+        android:inputType="numberDecimal"
+        android:defaultValue="0" />
+</PreferenceScreen>

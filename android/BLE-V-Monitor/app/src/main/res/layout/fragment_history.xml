@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="de.frank_durr.ble_v_monitor.HistoryFragment">
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_update_history"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="16dp"
+        android:scaleType="center"
+        android:elevation="8dp"
+        android:src="@drawable/ic_action_refresh"
+        android:clickable="true" />
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/charthistory"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

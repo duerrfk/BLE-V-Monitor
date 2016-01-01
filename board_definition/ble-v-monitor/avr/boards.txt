@@ -1,0 +1,22 @@
+blevmonitor.name=BLE-V-Monitor -- ATmega328P @ 8 MHz
+
+blevmonitor.upload.tool=avrdude
+blevmonitor.upload.protocol=arduino
+blevmonitor.upload.maximum_size=32256
+blevmonitor.upload.maximum_data_size=2048
+blevmonitor.upload.speed=9600
+
+blevmonitor.build.mcu=atmega328p
+blevmonitor.build.f_cpu=8000000L
+blevmonitor.build.core=arduino:arduino
+blevmonitor.build.variant=arduino:standard
+blevmonitor.build.board=ble-v-monitor
+
+#blevmonitor.bootloader.low_fuses=0x62
+#blevmonitor.bootloader.high_fuses=0xD9
+#blevmonitor.bootloader.extended_fuses=0x06
+#blevmonitor.bootloader.file=atmega/foo.hex
+#blevmonitor.bootloader.unlock_bits=0x3F
+#blevmonitor.bootloader.lock_bits=0x0F
+#blevmonitor.bootloader.tool=arduino:avrdude
+
