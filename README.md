@@ -115,7 +115,7 @@ latest hex file called  `ble-v-monitor.cpp.hex` in a temporary directory named
 
 ## BLE-V-Monitor App
 
-The BLE-V-Monitor App is implemented for Android 4.3 and above. It consists of a tabed view with a fragment to display the current voltage, and three more fragments to display minutely, hourly, and daily voltage histories, respectively.
+The BLE-V-Monitor App is implemented for Android 4.3 and above. It consists of a tab view with a fragment to display the current voltage, and three more fragments to display minutely, hourly, and daily voltage histories, respectively.
 
 The charge status of a lead–acid car battery can be quite easily derived from its voltage. We use the following voltage levels to estimate the charge status: 
 
